@@ -1,14 +1,17 @@
 class Player
-	attr_accessor :player_health, :player_attack, :player_defense, :player_inventory
+	attr_accessor :player_health, :player_attack, :player_defense, :player_inventory, :baron_health
 	
 	def initialize
 		@player_health = 20
 		@player_attack = 10
 		@player_defense = 10
+		@baron_health = 30
 
 		@player_inventory = []
 
-		puts "Player's health is #{player_health}. Player's attack is #{player_attack} and player's defense is #{player_defense}."
+		puts "\nPlayer's health is #{player_health}. Player's attack is #{player_attack} and player's defense is #{player_defense}."
+
+		set_baron_health
 	end
 
 	def check_inventory
@@ -16,13 +19,69 @@ class Player
 	end
 
 	def take(item)
-		@player_inventory.push("item")
-		@player_inventory
+		@player_inventory.push(item)
+		puts @player_inventory
 	end
+
+		def set_baron_health
+		if player_attack > 19 || player_defense > 14
+			@baron_health = 25
+		elsif player_attack > 19 && player_defense >14
+			@baron_health = 20
+		else
+			@baron_health = 30
+		end
+		puts "\nThe baron's health is #{baron_health}."
+	end
+
+	def attack_baron
+	# Generate random number between 0 and 6
+	# and round down to either 0 or 5
+	# store resulting integer in variable roll
+	player_roll = rand(6).floor
+ 
+	player_damage = player_roll * 3
+	puts "\nYou attack the Baron for #{player_damage} damage."
+ 
+	@baron_health -= player_damage
+ 
+	if @baron_health <= 0
+		abort("\nYou defeated the Baron! Run the file to play again.")
+	else
+		puts "Baron's health: #{@baron_health}hp"
+		defend_baron
+	end
+end
+ 
+def defend_baron
+	# Generate random number between 0 and 6
+	# and round down to either 0 or 5
+	# store resulting integer in variable roll
+	baron_roll = rand(6).floor
+ 
+	baron_damage = baron_roll * 3
+	puts "\nBaron attacks you for #{baron_damage} damage."
+ 
+	@player_health -= baron_damage
+ 
+	if @player_health <= 0
+		abort("The Baron has killed you. Run the file again to enact vengeance.")
+	else
+		puts "Your health: #{@player_health}hp"
+		puts "\nContinue attacking? Y/N"
+		choice = $stdin.gets.chomp.upcase
+		if choice == 'Y'
+			attack_baron
+		else
+			abort("You miss 100% of the shots you don't take. Game Over.")
+		end
+	end
+end
 
 end
 
 class Game
+	attr_accessor :player_health, :player_attack, :player_defense
 	
 	def initialize
 		start
@@ -38,7 +97,11 @@ class Game
 	end
 
 	def take(item)
-		@player.take("item")
+		@player.take(item)
+	end
+
+	def set_baron_health
+		@player.set_baron_health
 	end
 
 	def room_1
@@ -140,11 +203,13 @@ when 'BANDAGES'
 	puts "\n"
 	puts "Your ability to not bleed to death has increased. Defense +5. Your defense is now #{@player.player_defense}."
 	puts "\n"
+	room_3
 when 'ASPIRIN'
 	puts "\n"
 	puts "These will come in handy when you're hungover after all that bourbon you drank. But... not right now."
 	puts "\n"
 	take("aspirin")
+	room_3
 when 'TOASTER'
 	puts "\n"
 	puts "You should have checked whether that toaster was plugged in. Spoiler Alert: it was. Ye are verily dead."
@@ -190,12 +255,13 @@ def room_5
 end
 
 	def trigger_boss_battle
-		@baron = Baron.new
-		@baron.set_baron_health
-		puts "You've encountered the fearson Baron Von Schneckeldorfing. You must roll the direction
-		to determine your fate. Roll higher than the Baron to chip away at his health. If your roll is lower, you're hit instead.
-		You lose if your health reaches 0. Your health is #{@player.player_health}. The baron's health is #{@baron.baron_health}"
-		@baron.attack_baron
+		#@baron = Baron.new	
+		puts "You've encountered the fearson Baron Von Schneckeldorfing. You must roll the dice
+		\nto determine your fate. You lose if your health reaches 0.
+		\nYour health is #{@player.player_health}.
+		\nYour attack is #{@player.player_attack}. Your defense is #{@player.player_defense}."
+		set_baron_health
+		@player.attack_baron
 	end
 
 	def you_win
@@ -209,78 +275,6 @@ end
 def error_message
 		puts "That's not a valid choice. Try again."
 	end
-end
-
-	#def dice_roll
-	#	player_roll = 1 + rand(6)
-	#	baron_roll = 1 + rand(6)
-	#	puts "You rolled a #{player_roll}. The Baron rolled a #{baron_roll}. Your health is now #{player_health}. The baron's health is #{baron_health}."
-	#end
-
-class Baron < Game
-
-attr_accessor :baron_health
-
-	def initialize
-		@baron_health = baron_health
-	end
-
-	def set_baron_health
-		if @player.player_attack > 19 || @player.player_defense > 14
-			baron_health = 25
-		elsif @player.player_attack > 19 && @player.player_defense >14
-			baron_health = 20
-		else
-			baron_health = 30
-		end
-	end
-
-
-def attack_baron
-	# Generate random number between 0 and 6
-	# and round down to either 0 or 5
-	# store resulting integer in variable roll
-	player_roll = rand(6).floor
- 
-	player_damage = player_roll * 5
-	puts "\nYou attack the Baron for #{player_damage} damage."
- 
-	baron_health -= player_damage
- 
-	if baron_health <= 0
-		puts "\nYou defeated the Baron!"
-		you_win
-	else
-		puts "Baron's health: #{@baron_health}hp"
-		defend_baron
-	end
-end
- 
-def defend_baron
-	# Generate random number between 0 and 6
-	# and round down to either 0 or 5
-	# store resulting integer in variable roll
-	baron_roll = rand(6).floor
- 
-	baron_damage = baron_roll * 5
-	puts "\nBaron attacks you for #{baron_damage} damage."
- 
-	@player.player_health -= baron_damage
- 
-	if @player.player_health <= 0
-		you_lose
-	else
-		puts "Your health: #{@player_health}hp"
-		puts "\nContinue attacking? Y/N"
-		choice = $stdin.gets.chomp.upcase
-		if choice == 'Y'
-			attack_baron
-		else
-			you_lose
-		end
-	end
-end
-
 end
 
 Game.new
