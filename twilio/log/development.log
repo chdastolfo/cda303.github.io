@@ -1,0 +1,2009 @@
+
+
+Started GET "/" for ::1 at 2016-05-17 20:20:17 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 66ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-17 20:23:52 -0400
+
+ActionController::RoutingError (uninitialized constant WelcomeController):
+  activesupport (4.2.2) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.2) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.2) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.2) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.2) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (41.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.8ms)
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (12.3ms)[0m  select sqlite_version(*)
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePhoneNumbers (20160518005442)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "phone_numbers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "phone_number" varchar, "pin" varchar, "verified" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160518005442"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-05-17 21:06:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 57ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-17 21:06:52 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-17 21:07:05 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-17 21:08:04 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:10:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 318ms (Views: 285.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:11:45 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-17 21:11:48 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for PhoneNumbersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.3ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:12:27 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:14:43 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:14:45 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 21:15:52 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 22:19:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 389ms (Views: 317.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-17 22:19:16 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.2ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 22:22:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 307ms (Views: 274.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-17 22:22:31 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.3ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-17 22:39:19 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-17 22:39:30 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-17 22:39:35 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (59.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.3ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 13:51:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 327ms (Views: 292.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 13:52:04 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.2) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.2) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.2) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.2) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.8ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 13:53:12 -0400
+
+SyntaxError (/Applications/MAMP/htdocs/rampup/twilio/app/controllers/application_controller.rb:5: syntax error, unexpected keyword_end):
+  app/controllers/application_controller.rb:5: syntax error, unexpected keyword_end
+  app/controllers/phone_numbers_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.7ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 13:53:44 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 13:53:48 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.3ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "phone_numbers" ("phone_number", "created_at", "updated_at") VALUES (?, ?, ?)  [["phone_number", "5166607230"], ["created_at", "2016-05-18 17:53:48.421329"], ["updated_at", "2016-05-18 17:53:48.421329"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "7193"], ["updated_at", "2016-05-18 17:53:48.428834"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 7.1ms)
+
+ArgumentError (Account SID and auth token are required):
+  app/models/phone_number.rb:8:in `new'
+  app/models/phone_number.rb:8:in `twilio_client'
+  app/models/phone_number.rb:12:in `send_pin'
+  app/controllers/phone_numbers_controller.rb:10:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 13:56:14 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 13:56:18 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "5166607230"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "3086"], ["updated_at", "2016-05-18 17:56:18.504237"], ["id", 1]]
+  [1m[35m (323.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 324.3ms)
+
+ArgumentError (Account SID and auth token are required):
+  app/models/phone_number.rb:8:in `new'
+  app/models/phone_number.rb:8:in `twilio_client'
+  app/models/phone_number.rb:12:in `send_pin'
+  app/controllers/phone_numbers_controller.rb:10:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:04:29 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:04:33 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "5166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "0339"], ["updated_at", "2016-05-18 18:04:33.464544"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.7ms)
+
+ArgumentError (Account SID and auth token are required):
+  app/models/phone_number.rb:12:in `new'
+  app/models/phone_number.rb:12:in `twilio_client'
+  app/models/phone_number.rb:16:in `send_pin'
+  app/controllers/phone_numbers_controller.rb:10:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.9ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:16:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (628.4ms)
+Completed 200 OK in 1002ms (Views: 957.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:16:21 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:16:25 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.3ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "3969"], ["updated_at", "2016-05-18 18:16:25.123054"], ["id", 1]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 886ms (ActiveRecord: 5.1ms)
+
+Twilio::REST::RequestError (A 'From' phone number is required.):
+  app/models/phone_number.rb:16:in `send_pin'
+  app/controllers/phone_numbers_controller.rb:10:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.2ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:17:01 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:17:05 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "8652"], ["updated_at", "2016-05-18 18:17:05.172256"], ["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Completed 406 Not Acceptable in 749ms (ActiveRecord: 1.8ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:29:54 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:29:57 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.3ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "0989"], ["updated_at", "2016-05-18 18:29:57.684377"], ["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 406 Not Acceptable in 1078ms (ActiveRecord: 1.9ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.4ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:34:29 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:38:54 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "6354"], ["updated_at", "2016-05-18 18:38:54.230057"], ["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 1239ms (ActiveRecord: 2.5ms)
+
+NameError (undefined local variable or method `app' for #<PhoneNumbersController:0x007ff2f80391a0>):
+  app/controllers/phone_numbers_controller.rb:13:in `block in create'
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:40:13 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "3739"], ["updated_at", "2016-05-18 18:40:13.461210"], ["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Completed 406 Not Acceptable in 1265ms (ActiveRecord: 2.4ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.6ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:41:31 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "3514"], ["updated_at", "2016-05-18 18:41:31.922637"], ["id", 1]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Completed 406 Not Acceptable in 1114ms (ActiveRecord: 2.7ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.2ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:56:16 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:56:23 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"516-660-7230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "516-660-7230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "phone_numbers" ("phone_number", "created_at", "updated_at") VALUES (?, ?, ?)  [["phone_number", "516-660-7230"], ["created_at", "2016-05-18 18:56:23.766492"], ["updated_at", "2016-05-18 18:56:23.766492"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "3988"], ["updated_at", "2016-05-18 18:56:23.769718"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 406 Not Acceptable in 1124ms (ActiveRecord: 3.6ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.4ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 14:57:13 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 14:57:23 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"516-660-7230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.1ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "516-660-7230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "6073"], ["updated_at", "2016-05-18 18:57:23.819775"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 406 Not Acceptable in 1079ms (ActiveRecord: 1.8ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 15:06:35 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:06:39 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "5166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "7682"], ["updated_at", "2016-05-18 19:06:39.839988"], ["id", 1]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 406 Not Acceptable in 700ms (ActiveRecord: 2.9ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.7ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 15:06:54 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"7682", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", ""]]
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:18:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.9ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:18:25 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "8592"], ["updated_at", "2016-05-18 19:18:25.920310"], ["id", 1]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+Completed 406 Not Acceptable in 1072ms (ActiveRecord: 9.1ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started POST "/__web_console/repl_sessions/8002cad5b891c131049e5b02204d86f8/trace" for ::1 at 2016-05-18 15:19:42 -0400
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:20:39 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "0976"], ["updated_at", "2016-05-18 19:20:39.806516"], ["id", 1]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.1ms)
+Completed 200 OK in 1091ms (Views: 26.4ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 15:21:25 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"0976", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", ""]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:19:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.9ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:32:29 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "5166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "9865"], ["updated_at", "2016-05-18 19:32:29.749735"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  Rendered phone_numbers/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 1096ms (ActiveRecord: 2.7ms)
+
+ActionView::Template::Error (undefined method `phone_number_path' for #<#<Class:0x007ff2f89c19c0>:0x007ff2f89c0fc0>):
+    1: <div id="send-pin">
+    2:   <h3>What's your phone number?</h3>
+    3:   <%= form_for @phone_number, remote: true do |f| %>
+    4:     <div class="form-group">
+    5:       <%= f.text_field :phone_number %>
+    6:     </div>
+  app/views/phone_numbers/new.html.erb:3:in `_app_views_phone_numbers_new_html_erb___2565106040666403278_70340708519720'
+  app/controllers/phone_numbers_controller.rb:12:in `block (2 levels) in create'
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (68.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:43:52 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"15166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.1ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "15166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "phone_numbers" ("phone_number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["phone_number", "15166607230"], ["created_at", "2016-05-18 19:43:52.123728"], ["updated_at", "2016-05-18 19:43:52.123728"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "4328"], ["updated_at", "2016-05-18 19:43:52.126893"], ["id", 3]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered phone_numbers/new.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 1134ms (ActiveRecord: 3.2ms)
+
+ActionView::Template::Error (undefined method `phone_number_path' for #<#<Class:0x007ff2f89c19c0>:0x007ff2f80bb0b0>):
+    1: <div id="send-pin">
+    2:   <h3>What's your phone number?</h3>
+    3:   <%= form_for @phone_number, remote: true do |f| %>
+    4:     <div class="form-group">
+    5:       <%= f.text_field :phone_number %>
+    6:     </div>
+  app/views/phone_numbers/new.html.erb:3:in `_app_views_phone_numbers_new_html_erb___2565106040666403278_70340708519720'
+  app/controllers/phone_numbers_controller.rb:12:in `block (2 levels) in create'
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 15:50:29 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"0976", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", ""]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:19:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.2ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 15:56:29 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"15166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.1ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "15166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "1697"], ["updated_at", "2016-05-18 19:56:29.620947"], ["id", 3]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  Rendered phone_numbers/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 1013ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (undefined method `phone_number_path' for #<#<Class:0x007ff2f89c19c0>:0x007ff2f8abcd48>):
+    1: <div id="send-pin">
+    2:   <h3>What's your phone number?</h3>
+    3:   <%= form_for @phone_number, remote: true do |f| %>
+    4:     <div class="form-group">
+    5:       <%= f.text_field :phone_number %>
+    6:     </div>
+  app/views/phone_numbers/new.html.erb:3:in `_app_views_phone_numbers_new_html_erb___2565106040666403278_70340708519720'
+  app/controllers/phone_numbers_controller.rb:12:in `block (2 levels) in create'
+  app/controllers/phone_numbers_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.7ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:04:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 346ms (Views: 307.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 16:04:13 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"5166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "5166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "5277"], ["updated_at", "2016-05-18 20:04:13.638976"], ["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1188ms (Views: 4.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 16:04:30 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"5277", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", ""]]
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:19:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.2ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 16:16:13 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"5277", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", ""]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:19:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started PATCH "/phone-numbers/1" for ::1 at 2016-05-18 16:16:24 -0400
+
+AbstractController::ActionNotFound (The action 'update' could not be found for PhoneNumbersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started PATCH "/phone-numbers/1" for ::1 at 2016-05-18 16:18:55 -0400
+
+AbstractController::ActionNotFound (The action 'update' could not be found for PhoneNumbersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started PATCH "/phone-numbers/1" for ::1 at 2016-05-18 16:19:07 -0400
+
+ActionController::RoutingError (No route matches [PATCH] "/phone-numbers/1"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started PATCH "/phone-numbers/1" for ::1 at 2016-05-18 16:19:44 -0400
+
+ActionController::RoutingError (No route matches [PATCH] "/phone-numbers/1"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/phone_numbers" for ::1 at 2016-05-18 16:19:58 -0400
+
+AbstractController::ActionNotFound (The action 'index' could not be found for PhoneNumbersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.1ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:20:02 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:20:02 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 16:20:06 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"15166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.2ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "15166607230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "4023"], ["updated_at", "2016-05-18 20:20:06.311169"], ["id", 3]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  Rendered phone_numbers/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1173ms (Views: 6.1ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/phone_numbers/verify" for ::1 at 2016-05-18 16:20:17 -0400
+Processing by PhoneNumbersController#verify as HTML
+  Parameters: {"utf8"=>"✓", "hidden_phone_number"=>"", "pin"=>"4023", "commit"=>"Verify PIN"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", ""]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `verify' for nil:NilClass):
+  app/controllers/phone_numbers_controller.rb:19:in `verify'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:23:25 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 16:23:29 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"15166607230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "15166607230"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?[0m  [["pin", "9692"], ["updated_at", "2016-05-18 20:23:29.521844"], ["id", 3]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  Rendered phone_numbers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 637ms (Views: 3.8ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/phone_numbers/3" for ::1 at 2016-05-18 16:29:33 -0400
+
+AbstractController::ActionNotFound (The action 'update' could not be found for PhoneNumbersController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:29:39 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:29:40 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 16:29:45 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"516.660.7230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[36mPhoneNumber Load (0.2ms)[0m  [1mSELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1[0m  [["phone_number", "516.660.7230"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "phone_numbers" ("phone_number", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["phone_number", "516.660.7230"], ["created_at", "2016-05-18 20:29:45.577692"], ["updated_at", "2016-05-18 20:29:45.577692"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "5396"], ["updated_at", "2016-05-18 20:29:45.581414"], ["id", 4]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  Rendered phone_numbers/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1098ms (Views: 5.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:30:00 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/phone_numbers/new" for ::1 at 2016-05-18 16:30:01 -0400
+Processing by PhoneNumbersController#new as HTML
+  Rendered phone_numbers/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/phone_numbers" for ::1 at 2016-05-18 16:30:07 -0400
+Processing by PhoneNumbersController#create as HTML
+  Parameters: {"utf8"=>"✓", "phone_number"=>{"phone_number"=>"516-660-7230"}, "commit"=>"Gimme my Prize"}
+Can't verify CSRF token authenticity
+  [1m[35mPhoneNumber Load (0.1ms)[0m  SELECT  "phone_numbers".* FROM "phone_numbers" WHERE "phone_numbers"."phone_number" = ? LIMIT 1  [["phone_number", "516-660-7230"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "phone_numbers" SET "pin" = ?, "updated_at" = ? WHERE "phone_numbers"."id" = ?  [["pin", "7931"], ["updated_at", "2016-05-18 20:30:07.170128"], ["id", 2]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  Rendered phone_numbers/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 600ms (Views: 6.0ms | ActiveRecord: 2.1ms)
