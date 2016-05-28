@@ -1,0 +1,379 @@
+body {
+	font-family: "roboto", sans-serif;
+	margin: 0;
+	font-size: 12px;
+	color: #495b60;
+}
+
+form {
+
+	margin-bottom: 25px;
+}
+
+/* Layout */
+
+.panel {
+	min-height: 100vh;
+}
+
+.inner-wrapper {
+	max-width: 500px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 30px;
+}
+
+.three-even-columns,
+.two-even-columns {
+	width: 100%;
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.three-column-1,
+.three-column-2,
+.three-column-3 {
+	width: 33%;
+	float: left;
+	padding: 40px 0;
+	border-bottom: 1px solid #dadedf;
+	border-top: 1px solid #dadedf;
+}
+
+.three-column-1,
+.three-column-2 {
+	border-right: 1px solid #dadedf;
+}
+
+.two-column-1 {
+	width: 50%;
+	float: left;
+}
+
+.two-column-2 {
+	width: 50%;
+	float: right;
+}
+
+.noBorderTop {
+	border-top: none;
+}
+
+.picture {
+	margin-bottom: 20px;
+}
+
+.buttonpad {
+	margin-left: -65px;
+}
+/* Text Styles */
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 4em;
+	margin-bottom: 1px;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+h4 {
+	font-size: 2.5em;
+}
+
+h5 {
+	font-size: 2em;
+}
+
+h6 {
+	font-size: 1em;
+	text-align: center;
+}
+
+p {
+	font-size: 1.25em;
+	color: #495b60;
+	margin: 5px;
+}
+
+/* Buttons */
+
+.button {
+	background: purple;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+/* Header Styles */
+
+header {
+	background-color: white;
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 25px 0;
+	clear: both;
+	display: table;
+	width: 100%;
+	content: '';
+}
+
+header > #headerLogo {
+	width: 50%;
+	float: left;
+}
+
+header > #headerLogo > img {
+	max-width: 200px;
+}
+
+
+/* Navigation */
+
+header > nav {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+header > nav ul {
+	list-style-type: none;
+}
+
+header > nav ul li {
+	display: inline-block;
+}
+
+header > nav ul li a {
+	padding: 10px;
+	color: green;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* Hero Section */
+
+#hero {
+  background: 
+    linear-gradient(
+      rgba(36,65,75,0.58), 
+      rgba(36,65,75,0.58)
+    ),
+    url('../images/simscastle.jpg');
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+#hero > .inner-wrapper {
+	max-width: 900px;	
+}
+
+#hero h2 {
+	font-weight: 300;
+}
+
+#hero p {
+	color: white;
+}
+
+#hero .heroPercentage {
+	display: inline-block;
+	border: 1px solid white;
+	margin-top: 50px;
+	margin-bottom: 0;
+	border-radius: 20%;
+	padding: 40px;
+}
+
+#hero .heroPercentage h3, 
+#hero .heroPercentage p {
+	margin: 0;
+}
+
+/* Learn More Section */
+
+#learnMore {
+	text-align: center;
+}
+
+#learnMore h3 {
+	color: rgb(66, 137, 157);
+	font-style: italic;
+	padding-bottom: 20px;
+	border-bottom: 5px solid rgb(66, 137, 157);
+	max-width: 450px;
+	margin-left: -15px;
+}
+
+#learnMore h5 {
+	font-weight: 400;
+	margin-top: 0.3em;
+	margin-bottom: 0;
+}
+
+
+/* Form Section */
+#formSection {
+  background: white;
+	background-size: cover;
+	text-align: center;
+	color: white;	
+}
+
+#formSection .large-inner-wrapper {
+	padding: 65px 0;
+	max-width: 1200px;
+}
+
+#formSection p {
+	color: white;
+}
+
+#formSection form {
+	padding: 20px;
+	background-color: rgb(66, 137, 157);
+	max-width: 275px;
+	margin-bottom:30px;
+	margin-top: 30px;
+	margin-left: 120px;
+	text-align: right;
+}
+
+#formSection form > section {
+	padding: 10px;
+}
+
+#formSection form h4,
+#formSection form p {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+
+#formSection form h4 {
+	margin: 0.3em 0;
+}
+
+#formSection form p {
+	margin-bottom: 25px;
+}
+
+#formSection .proofPoints {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+#formSection .proofPoint {
+	margin: 50px 0;
+}
+
+#formSection .proofPoint h4 {
+	font-weight: 300;
+	font-style: italic;
+}
+
+#formSection button{
+	margin-right: -15px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background: 
+    linear-gradient(
+      rgba(36,65,75,0.58), 
+      rgba(36,65,75,0.58)
+    ),
+    url('../images/simshouse.jpg');
+	background-size: cover;
+	text-align: center;
+	color: white;	
+}
+
+#testimonials.large-inner-wrapper {
+	padding: 65px 0;
+	max-width: 1200px;
+}
+
+#testimonials p {
+	color: white;
+}
+
+#testimonials .proofPoints {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+#testimonials .proofPoint {
+	margin: 50px 0;
+}
+
+#testimonials .proofPoint h4 {
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+/* About Us Section */
+
+#aboutUs {
+	text-align: center;
+}
+
+#aboutUs h3 {
+	color: rgb(66, 137, 157);
+	font-style: italic;
+	padding-bottom: 20px;
+	border-bottom: 5px solid rgb(66, 137, 157);
+	max-width: 450px;
+	margin: 0 auto 50px;
+}
+
+/* Contact Us Page */
+
+#contactUs form input,
+#contactUs form textarea {
+	width: 100%;
+}
+
+#contactUs form label {
+	display: block;
+	margin-bottom: 0.2em;
+}
+
+#contactUs form > section {
+	padding: 10px 0;
+}
+
+#contactUs h2 {
+	margin-top: 0;
+}
+
+/* Footer */
+
+footer {
+	font-family: "comic sans MS", sans-serif;
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-top: 1px solid #495b60;
+}
+
+footer > #footerLogo {
+	max-width: 170px;
+	margin-left: 438px;
+}
+
+footer > #footerLogo > img {
+	width: 75%;
+}
