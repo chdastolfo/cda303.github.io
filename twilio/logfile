@@ -1,0 +1,30 @@
+-bash: $: command not found
+LOG:  database system was shut down at 2016-05-19 10:51:25 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  database "db/development.postgresql" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  database "christinadastolfo" does not exist
+FATAL:  role "d" does not exist
+FATAL:  database "init" does not exist
+FATAL:  database "restart" does not exist
+FATAL:  database "db/development.postgresql" does not exist
+FATAL:  database "db/development.postgresql" does not exist
+FATAL:  database "db/development.postgresql" does not exist
+WARNING:  corrupted statistics file "pg_stat_tmp/global.stat"
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

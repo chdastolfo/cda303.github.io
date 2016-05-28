@@ -4,15 +4,14 @@ Rails.application.routes.draw do
   #get 'ajax/:action', to: 'ajax#:action', :defaults => { :format => 'json' }
   #resources :entries, defaults: { format: 'json' }
 
-  post 'phone_numbers/verify' => "phone_numbers#verify"
   post 'phone_numbers/create' => "phone_numbers#create"
-
-
+  post 'phone_numbers/verify' => "phone_numbers#verify"
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  #root 'welcome#index'
+  root 'phone_numbers#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

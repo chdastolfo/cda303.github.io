@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-	<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", media: 'all', 'data-turbolinks-track' => true %>
-	<%= csrf_meta_tags %>
+
+<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", media: 'all', 'data-turbolinks-track' => true %>
+
 <head>
 	<title>X-Tina Rulez</title>
 </head>
-<body>
+<body style="background-color: lightblue">
 <header>
-<h2>Enter Your Phone Number to Win a Prize!</h2>
+<h2 style="text-align:center">Enter Your Phone Number to Win a Prize!</h2>
 </header>
 <div class="container">
 	<%= yield %>
